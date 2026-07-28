@@ -1,7 +1,6 @@
 // みんなの日本語 初級 第1課〜第8課 完全網羅データベース
 const wordDatabases = {
   "ch1_5": [
-    // --- 第1課 ---
     { vn: "Tôi", ja: "私" },
     { vn: "Bạn / Anh / Chị", ja: "あなた" },
     { vn: "Người đó / Vị kia", ja: "あの人" },
@@ -34,8 +33,6 @@ const wordDatabases = {
     { vn: "Rất mong được sự giúp đỡ của bạn", ja: "どうぞよろしくお願いします" },
     { vn: "Xin lỗi, nhưng mà...", ja: "失礼ですが" },
     { vn: "Tên bạn là gì?", ja: "お名前は？" },
-
-    // --- 第2課 ---
     { vn: "Cái này / Đây", ja: "これ" },
     { vn: "Cái đó / Đó", ja: "それ" },
     { vn: "Cái kia / Kia", ja: "あれ" },
@@ -82,8 +79,6 @@ const wordDatabases = {
     { vn: "Cảm ơn", ja: "どうも" },
     { vn: "Từ nay mong anh/chị giúp đỡ", ja: "これからお世話になります" },
     { vn: "Rất mong được sự giúp đỡ của anh/chị", ja: "どうぞよろしくお願いします（2）" },
-
-    // --- 第3課 ---
     { vn: "Ở đây / Chỗ này", ja: "ここ" },
     { vn: "Ở đó / Chỗ đó", ja: "そこ" },
     { vn: "Ở kia / Chỗ kia", ja: "あそこ" },
@@ -123,8 +118,6 @@ const wordDatabases = {
     { vn: "Mười nghìn / Vạn", ja: "万" },
     { vn: "Xin lỗi / Cảm ơn (khi nhận sự giúp đỡ)", ja: "すみません" },
     { vn: "Cảm ơn rất nhiều", ja: "どうもありがとうございました" },
-
-    // --- 第4課 ---
     { vn: "Thức dậy", ja: "起きます" },
     { vn: "Đi ngủ", ja: "寝ます" },
     { vn: "Làm việc", ja: "働きます" },
@@ -175,8 +168,6 @@ const wordDatabases = {
     { vn: "Vất vả quá nhỉ / Cực nhỉ", ja: "大変ですね" },
     { vn: "Nhờ anh/chị / Xin vui lòng", ja: "お願いします" },
     { vn: "Vâng, tôi hiểu rồi / Xin rõ", ja: "かしこまりました" },
-
-    // --- 第5課 ---
     { vn: "Đi", ja: "行きます" },
     { vn: "Đến", ja: "来ます" },
     { vn: "Về", ja: "帰ります" },
@@ -229,9 +220,7 @@ const wordDatabases = {
     { vn: "Tàu tốc hành đặc biệt", ja: "特急" },
     { vn: "Tiếp theo / Sau", ja: "次の" }
   ],
-  
   "ch6_8": [
-    // --- 第6課 ---
     { vn: "Ăn", ja: "食べる" },
     { vn: "Uống", ja: "飲む" },
     { vn: "Hút (thuốc lá)", ja: "吸う" },
@@ -275,8 +264,6 @@ const wordDatabases = {
     { vn: "Thỉnh thoảng", ja: "時々" },
     { vn: "Sau đó / Thế rồi", ja: "それから" },
     { vn: "Cái gì đó", ja: "何を" },
-
-    // --- 第7課 ---
     { vn: "Cắt", ja: "切る" },
     { vn: "Gửi", ja: "送る" },
     { vn: "Cho / Tặng", ja: "上げる" },
@@ -305,8 +292,6 @@ const wordDatabases = {
     { vn: "Đã ~ / Rồi", ja: "もう" },
     { vn: "Chưa", ja: "まだ" },
     { vn: "Từ bây giờ", ja: "これから" },
-
-    // --- 第8課 ---
     { vn: "Đẹp / Sạch sẽ", ja: "綺麗" },
     { vn: "Náo nhiệt / Đông đúc", ja: "賑やか" },
     { vn: "Yên tĩnh", ja: "静か" },
@@ -353,8 +338,6 @@ const wordDatabases = {
     { vn: "Nhưng", ja: "が" },
     { vn: "Cái này nhé", ja: "どれ" }
   ],
-
-  // 残りのカテゴリ（9課以降）
   "ch9_12": [
     { vn: "Hiểu", ja: "分かります" }, { vn: "Có", ja: "あります" }, { vn: "Thích", ja: "好き" }, { vn: "Ghét", ja: "嫌い" }
   ],
@@ -377,41 +360,31 @@ let currentIndex = 0;
 let score = 0;
 let userAnswers = [];
 
-// ベトナム語を3回連続で発話する関数
 function playVietnameseAudio() {
   if (!('speechSynthesis' in window)) {
     alert("お使いのブラウザは音声読み上げに対応していません。");
     return;
   }
-
   window.speechSynthesis.cancel();
-
   const currentWord = currentQuestions[currentIndex].vn;
   let count = 0;
-
   function speakOnce() {
     if (count >= 3) return;
-
     const utterance = new SpeechSynthesisUtterance(currentWord);
     utterance.lang = 'vi-VN';
     utterance.rate = 0.9;
-
     utterance.onend = function() {
       count++;
       setTimeout(speakOnce, 400);
     };
-
     window.speechSynthesis.speak(utterance);
   }
-
   speakOnce();
 }
 
-// 効果音（ピンポーン音）
 function playCorrectSound() {
   try {
     const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-    
     const osc1 = audioCtx.createOscillator();
     const gain1 = audioCtx.createGain();
     osc1.type = 'sine';
@@ -440,7 +413,6 @@ function playCorrectSound() {
   }
 }
 
-// シャッフル
 function shuffleArray(array) {
   const arr = [...array];
   for (let i = arr.length - 1; i > 0; i--) {
@@ -450,10 +422,8 @@ function shuffleArray(array) {
   return arr;
 }
 
-// 学習開始
 function startQuiz(categoryKey) {
   let targetPool = [];
-
   if (categoryKey === 'all') {
     for (let key in wordDatabases) {
       targetPool = targetPool.concat(wordDatabases[key]);
@@ -499,7 +469,6 @@ function startQuiz(categoryKey) {
   showQuestion();
 }
 
-// 問題表示
 function showQuestion() {
   const q = currentQuestions[currentIndex];
   document.getElementById('current-question-num').textContent = currentIndex + 1;
@@ -528,7 +497,6 @@ function showQuestion() {
   }
 }
 
-// 選択肢クリック
 function selectAnswer(choiceIndex) {
   if (userAnswers[currentIndex] !== null) return;
 
@@ -557,7 +525,6 @@ function selectAnswer(choiceIndex) {
   }
 }
 
-// 戻る
 function goPrev() {
   if (currentIndex > 0) {
     currentIndex--;
@@ -565,7 +532,6 @@ function goPrev() {
   }
 }
 
-// 次へ
 function goNext() {
   if (currentIndex < currentQuestions.length - 1) {
     currentIndex++;
@@ -575,10 +541,8 @@ function goNext() {
   }
 }
 
-// 終了ボタンが押されたときの処理
 function goExit() {
   const topScreen = document.getElementById('screen-top');
-  
   if (topScreen.style.display !== 'none') {
     alert("ブラウザのタブ（×ボタン）を閉じてアプリを終了してください。");
   } else {
@@ -586,7 +550,6 @@ function goExit() {
   }
 }
 
-// 結果表示
 function showResult() {
   document.getElementById('screen-quiz').style.display = 'none';
   document.getElementById('screen-result').style.display = 'block';
@@ -606,7 +569,6 @@ function showResult() {
   }
 }
 
-// トップに戻る
 function returnToTop() {
   document.getElementById('screen-quiz').style.display = 'none';
   document.getElementById('screen-result').style.display = 'none';
