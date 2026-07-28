@@ -1,4 +1,4 @@
-// みんなの日本語 初級 第1課〜第19課 完全網羅データベース（辞書形統一版）
+// みんなの日本語 初級 第1課〜第22課 完全網羅データベース（辞書形統一版）
 const wordDatabases = {
   "ch1_5": [
     // --- 第1課 ---
@@ -493,7 +493,7 @@ const wordDatabases = {
     { vn: "Ở / Sống", ja: "住む" },
     { vn: "Nghiên cứu", ja: "研究する" },
     { vn: "Mặc (quần áo)", ja: "着る" },
-    { vn: "Đi (gi giày/tất)", ja: "履く" },
+    { vn: "Đi (giày/tất)", ja: "履く" },
     { vn: "Đội (mũ)", ja: "被る" },
     { vn: "Đeo (kính)", ja: "掛ける" },
     { vn: "Cười", ja: "笑う" },
@@ -595,8 +595,43 @@ const wordDatabases = {
   ],
 
   "ch20_22": [
-    { vn: "Cần", ja: "要る" }, { vn: "Hiểu", ja: "分かる" }, { vn: "Tìm", ja: "探す" }, { vn: "Trễ / muộn", ja: "遅れる" }
+    // --- 第20課 ---
+    { vn: "Cần", ja: "要る" },
+    { vn: "Hiểu", ja: "分かる" },
+    { vn: "Tìm kiếm", ja: "探す" },
+    { vn: "Chậm, trễ", ja: "遅れる" },
+    { vn: "Thanh toán, trả tiền", ja: "払う" },
+    { vn: "Trả lại", ja: "返す" },
+    { vn: "Xuất phát, khởi hành", ja: "出発する" },
+    { vn: "Đến nơi", ja: "到着する" },
+    { vn: "Đổi (tiền, xe)", ja: "換える" },
+    { vn: "Bỏ, vứt", ja: "捨てる" },
+
+    // --- 第21課 ---
+    { vn: "Nghĩ, cho rằng", ja: "思う" },
+    { vn: "Nói", ja: "言う" },
+    { vn: "Thắng", ja: "勝つ" },
+    { vn: "Thua", ja: "負ける" },
+    { vn: "Có (lễ hội, sự kiện)", ja: "ある" },
+    { vn: "Cẩn thận", ja: "気をつける" },
+    { vn: "Dẫn (ai đi)", ja: "連れる" },
+    { vn: "Đi cùng", ja: "伴う" },
+    { vn: "Chăm sóc", ja: "世話する" },
+    { vn: "Nhìn", ja: "眺める" },
+
+    // --- 第22課 ---
+    { vn: "Mặc (áo sơ mi...)", ja: "着る" },
+    { vn: "Đi, mang (giày, quần)", ja: "履く" },
+    { vn: "Đội (mũ)", ja: "被る" },
+    { vn: "Đeo (kính)", ja: "掛ける" },
+    { vn: "Sinh ra", ja: "生まれる" },
+    { vn: "Mặc (com lê...)", ja: "スーツを着る" },
+    { vn: "Treo", ja: "掛ける" },
+    { vn: "Đóng", ja: "閉める" },
+    { vn: "Mở", ja: "開ける" },
+    { vn: "Làm", ja: "する" }
   ],
+
   "ch23_25": [
     { vn: "Rẽ / quẹo", ja: "曲がる" }, { vn: "Mang / cầm", ja: "持つ" }, { vn: "Lấy", ja: "取る" }, { vn: "Giúp", ja: "手伝う" }
   ]
