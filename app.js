@@ -1,4 +1,4 @@
-// みんなの日本語 初級 第1課〜第12課 完全網羅データベース（完全辞書形統一版）
+// みんなの日本語 初級 第1課〜第15課 完全網羅データベース（辞書形統一版）
 const wordDatabases = {
   "ch1_5": [
     // --- 第1課 ---
@@ -355,7 +355,7 @@ const wordDatabases = {
   ],
 
   "ch9_12": [
-    // --- 第9課 (完全辞書形統一) ---
+    // --- 第9課 ---
     { vn: "Hiểu", ja: "分かる" },
     { vn: "Có (sở hữu/tồn tại vật vô tri)", ja: "ある" },
     { vn: "Có (tồn tại người/động vật)", ja: "いる" },
@@ -385,7 +385,7 @@ const wordDatabases = {
     { vn: "Bia", ja: "ビール" },
     { vn: "Rượu", ja: "酒" },
 
-    // --- 第10課 (完全辞書形統一) ---
+    // --- 第10課 ---
     { vn: "Có (tồn tại ở đâu đó)", ja: "ある" },
     { vn: "Có (người/động vật ở đâu đó)", ja: "いる" },
     { vn: "Nhiều", ja: "多い" },
@@ -411,7 +411,7 @@ const wordDatabases = {
     { vn: "Hiệu sách", ja: "本屋" },
     { vn: "Nhà hàng", ja: "レストラン" },
 
-    // --- 第11課 (完全辞書形統一) ---
+    // --- 第11課 ---
     { vn: "Chơi / Vui chơi", ja: "遊ぶ" },
     { vn: "Bơi", ja: "泳ぐ" },
     { vn: "Đón", ja: "迎える" },
@@ -432,7 +432,7 @@ const wordDatabases = {
     { vn: "Ngày mai", ja: "明日" },
     { vn: "Hôm qua", ja: "昨日" },
 
-    // --- 第12課 (完全辞書形統一) ---
+    // --- 第12課 ---
     { vn: "Nghỉ / Vắng mặt", ja: "休む" },
     { vn: "Trở nên / Trở thành", ja: "なる" },
     { vn: "Mang / Trì hoãn", ja: "持つ" },
@@ -456,8 +456,88 @@ const wordDatabases = {
   ],
 
   "ch13_15": [
-    { vn: "Rộng", ja: "広い" }, { vn: "Hẹp", ja: "狭い" }, { vn: "Mới", ja: "新しい" }, { vn: "Cũ", ja: "古い" }
+    // --- 第13課 ---
+    { vn: "Muốn (làm gì đó)", ja: "欲しい" },
+    { vn: "Muốn ăn / Muốn uống", ja: "～たい" },
+    { vn: "Đi", ja: "行く" },
+    { vn: "Đến", ja: "来る" },
+    { vn: "Trở về", ja: "帰る" },
+    { vn: "Vào", ja: "入る" },
+    { vn: "Ra", ja: "出る" },
+    { vn: "Bắt đầu", ja: "始める" },
+    { vn: "Treo / Ngồi / Tốn (tiền/thời gian)", ja: "かかる" },
+    { vn: "Nghỉ / Lấy (nghỉ ngơi)", ja: "取る" },
+    { vn: "Mệt", ja: "疲れる" },
+    { vn: "Đẹp", ja: "美しい" },
+    { vn: "Thú vị", ja: "面白い" },
+    { vn: "Du lịch", ja: "旅行する" },
+    { vn: "Mua sắm", ja: "買い物する" },
+    { vn: "Ă5 / Bữa ăn", ja: "食事する" },
+    { vn: "Hòa mình / Đạt được", ja: "着く" },
+    { vn: "Sớm", ja: "早い" },
+    { vn: "Muộn", ja: "遅い" },
+    { vn: "Nhiều", ja: "多い" },
+    { vn: "Ít", ja: "少ない" },
+    { vn: "Ấm", ja: "暖かい" },
+    { vn: "Mát", ja: "涼しい" },
+    { vn: "Ngọt", ja: "甘い" },
+    { vn: "Cay", ja: "辛い" },
+    { vn: "Đắng", ja: "苦い" },
+    { vn: "Chua", ja: "酸っぱい" },
+
+    // --- 第14課 ---
+    { vn: "Đặt / Để", ja: "置く" },
+    { vn: "Làm / Tạo ra", ja: "作る" },
+    { vn: "Bán", ja: "売る" },
+    { vn: "Biết", ja: "知る" },
+    { vn: "Ở / Sống", ja: "住む" },
+    { vn: "Nghiên cứu", ja: "研究する" },
+    { vn: "Mặc (quần áo)", ja: "着る" },
+    { vn: "Đi (giày/tất)", ja: "履く" },
+    { vn: "Đội (mũ)", ja: "被る" },
+    { vn: "Đeo (kính)", ja: "掛ける" },
+    { vn: "Cười", ja: "笑う" },
+    { vn: "Khóc", ja: "泣く" },
+    { vn: "Thắng / Đạt", ja: "勝つ" },
+    { vn: "Thua", ja: "負ける" },
+    { vn: "Chạy", ja: "走る" },
+    { vn: "Đứng", ja: "立つ" },
+    { vn: "Ngồi", ja: "座る" },
+    { vn: "Sử dụng", ja: "使う" },
+    { vn: "Hiểu", ja: "分かる" },
+    { vn: "Nhớ", ja: "覚える" },
+    { vn: "Quên", ja: "忘れる" },
+    { vn: "Mất", ja: "無くす" },
+    { vn: "Trả lại", ja: "返す" },
+    { vn: "Xuất phát / Rời đi", ja: "発つ" },
+
+    // --- 第15課 ---
+    { vn: "Nói", ja: "言う" },
+    { vn: "Nói chuyện", ja: "話す" },
+    { vn: "Xem / Nhìn", ja: "見る" },
+    { vn: "Nghe", ja: "聞く" },
+    { vn: "Đọc", ja: "読む" },
+    { vn: "Viết", ja: "書く" },
+    { vn: "Mua", ja: "買う" },
+    { vn: "Làm", ja: "する" },
+    { vn: "Cho", ja: "与える" },
+    { vn: "Nhận", ja: "受け取る" },
+    { vn: "Dạy", ja: "教える" },
+    { vn: "Học", ja: "学ぶ" },
+    { vn: "Nhớ", ja: "覚える" },
+    { vn: "Quên", ja: "忘れる" },
+    { vn: "Gặp", ja: "会う" },
+    { vn: "Chờ", ja: "待つ" },
+    { vn: "Mang", ja: "持つ" },
+    { vn: "Lấy", ja: "取る" },
+    { vn: "Giúp", ja: "手伝う" },
+    { vn: "Gọi", ja: "呼ぶ" },
+    { vn: "Bắt đầu", ja: "始まる" },
+    { vn: "Kết thúc", ja: "終わる" },
+    { vn: "Mở", ja: "開ける" },
+    { vn: "Đóng", ja: "閉める" }
   ],
+
   "ch16_19": [
     { vn: "Bật", ja: "付ける" }, { vn: "Tắt", ja: "消す" }, { vn: "Mở", ja: "開ける" }, { vn: "Đóng", ja: "閉める" }
   ],
