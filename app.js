@@ -1,4 +1,4 @@
-// みんなの日本語 初級 第1課〜第15課 完全網羅データベース（辞書形統一版）
+// みんなの日本語 初級 第1課〜第19課 完全網羅データベース（辞書形統一版）
 const wordDatabases = {
   "ch1_5": [
     // --- 第1課 ---
@@ -472,8 +472,8 @@ const wordDatabases = {
     { vn: "Thú vị", ja: "面白い" },
     { vn: "Du lịch", ja: "旅行する" },
     { vn: "Mua sắm", ja: "買い物する" },
-    { vn: "Ă5 / Bữa ăn", ja: "食事する" },
-    { vn: "Hòa mình / Đạt được", ja: "着く" },
+    { vn: "Ăn uống / Bữa ăn", ja: "食事する" },
+    { vn: "Đến nơi", ja: "着く" },
     { vn: "Sớm", ja: "早い" },
     { vn: "Muộn", ja: "遅い" },
     { vn: "Nhiều", ja: "多い" },
@@ -493,7 +493,7 @@ const wordDatabases = {
     { vn: "Ở / Sống", ja: "住む" },
     { vn: "Nghiên cứu", ja: "研究する" },
     { vn: "Mặc (quần áo)", ja: "着る" },
-    { vn: "Đi (giày/tất)", ja: "履く" },
+    { vn: "Đi (gi giày/tất)", ja: "履く" },
     { vn: "Đội (mũ)", ja: "被る" },
     { vn: "Đeo (kính)", ja: "掛ける" },
     { vn: "Cười", ja: "笑う" },
@@ -539,8 +539,61 @@ const wordDatabases = {
   ],
 
   "ch16_19": [
-    { vn: "Bật", ja: "付ける" }, { vn: "Tắt", ja: "消す" }, { vn: "Mở", ja: "開ける" }, { vn: "Đóng", ja: "閉める" }
+    // --- 第16課 ---
+    { vn: "Bật", ja: "付ける" },
+    { vn: "Tắt", ja: "消す" },
+    { vn: "Mở", ja: "開ける" },
+    { vn: "Đóng", ja: "閉める" },
+    { vn: "Đợi", ja: "待つ" },
+    { vn: "Mang / Cầm", ja: "持つ" },
+    { vn: "Lấy", ja: "取る" },
+    { vn: "Giúp", ja: "手伝う" },
+    { vn: "Gọi", ja: "呼ぶ" },
+    { vn: "Nói", ja: "話す" },
+    { vn: "Cho xem", ja: "見せる" },
+    { vn: "Dạy", ja: "教える" },
+    { vn: "Bắt đầu", ja: "始める" },
+    { vn: "Hút thuốc", ja: "吸う" },
+    { vn: "Sử dụng", ja: "使う" },
+
+    // --- 第17課 ---
+    { vn: "Làm, chế tạo", ja: "作る" },
+    { vn: "Hiểu, biết", ja: "分かる" },
+    { vn: "Có (tồn tại)", ja: "ある" },
+    { vn: "Cần", ja: "要る" },
+    { vn: "Tắm", ja: "浴びる" },
+    { vn: "Nhập học", ja: "入る" },
+    { vn: "Rời khỏi", ja: "出る" },
+    { vn: "Mang vào", ja: "入れる" },
+    { vn: "Lấy ra", ja: "出す" },
+    { vn: "Cố gắng", ja: "頑張る" },
+    { vn: "Đăng ký", ja: "申し込む" },
+
+    // --- 第18課 ---
+    { vn: "Có thể", ja: "出来る" },
+    { vn: "Rửa", ja: "洗う" },
+    { vn: "Hát", ja: "歌う" },
+    { vn: "Chơi (nhạc cụ)", ja: "弾く" },
+    { vn: "Múa, nhảy", ja: "踊る" },
+    { vn: "Thu gom", ja: "集める" },
+    { vn: "Vứt", ja: "捨てる" },
+    { vn: "Đổi, thay", ja: "換える" },
+    { vn: "Lái xe", ja: "運転する" },
+    { vn: "Leo núi", ja: "登る" },
+
+    // --- 第19課 ---
+    { vn: "Leo (núi, thang)", ja: "登る" },
+    { vn: "Ở trọ", ja: "泊まる" },
+    { vn: "Dọn dẹp", ja: "掃除する" },
+    { vn: "Giặt", ja: "洗濯する" },
+    { vn: "Trở thành", ja: "なる" },
+    { vn: "Cảm thấy", ja: "感じる" },
+    { vn: "Suy nghĩ", ja: "考える" },
+    { vn: "Biết", ja: "知る" },
+    { vn: "Sống", ja: "生きる" },
+    { vn: "Chết", ja: "死ぬ" }
   ],
+
   "ch20_22": [
     { vn: "Cần", ja: "要る" }, { vn: "Hiểu", ja: "分かる" }, { vn: "Tìm", ja: "探す" }, { vn: "Trễ / muộn", ja: "遅れる" }
   ],
