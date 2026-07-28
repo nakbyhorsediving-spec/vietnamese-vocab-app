@@ -1,6 +1,7 @@
-// みんなの日本語 初級 第1課〜第8課 完全網羅データベース
+// みんなの日本語 初級 第1課〜第12課 完全網羅データベース（辞書形統一版）
 const wordDatabases = {
   "ch1_5": [
+    // --- 第1課 ---
     { vn: "Tôi", ja: "私" },
     { vn: "Bạn / Anh / Chị", ja: "あなた" },
     { vn: "Người đó / Vị kia", ja: "あの人" },
@@ -33,6 +34,8 @@ const wordDatabases = {
     { vn: "Rất mong được sự giúp đỡ của bạn", ja: "どうぞよろしくお願いします" },
     { vn: "Xin lỗi, nhưng mà...", ja: "失礼ですが" },
     { vn: "Tên bạn là gì?", ja: "お名前は？" },
+
+    // --- 第2課 ---
     { vn: "Cái này / Đây", ja: "これ" },
     { vn: "Cái đó / Đó", ja: "それ" },
     { vn: "Cái kia / Kia", ja: "あれ" },
@@ -79,6 +82,8 @@ const wordDatabases = {
     { vn: "Cảm ơn", ja: "どうも" },
     { vn: "Từ nay mong anh/chị giúp đỡ", ja: "これからお世話になります" },
     { vn: "Rất mong được sự giúp đỡ của anh/chị", ja: "どうぞよろしくお願いします（2）" },
+
+    // --- 第3課 ---
     { vn: "Ở đây / Chỗ này", ja: "ここ" },
     { vn: "Ở đó / Chỗ đó", ja: "そこ" },
     { vn: "Ở kia / Chỗ kia", ja: "あそこ" },
@@ -118,12 +123,14 @@ const wordDatabases = {
     { vn: "Mười nghìn / Vạn", ja: "万" },
     { vn: "Xin lỗi / Cảm ơn (khi nhận sự giúp đỡ)", ja: "すみません" },
     { vn: "Cảm ơn rất nhiều", ja: "どうもありがとうございました" },
-    { vn: "Thức dậy", ja: "起きます" },
-    { vn: "Đi ngủ", ja: "寝ます" },
-    { vn: "Làm việc", ja: "働きます" },
-    { vn: "Nghỉ ngơi", ja: "休みます" },
-    { vn: "Học tập", ja: "勉強します" },
-    { vn: "Kết thúc", ja: "終わります" },
+
+    // --- 第4課 (辞書形統一) ---
+    { vn: "Thức dậy", ja: "起きる" },
+    { vn: "Đi ngủ", ja: "寝る" },
+    { vn: "Làm việc", ja: "働く" },
+    { vn: "Nghỉ ngơi", ja: "休む" },
+    { vn: "Học tập", ja: "勉強する" },
+    { vn: "Kết thúc", ja: "終わる" },
     { vn: "Cửa hàng bách hóa / Trung tâm thương mại", ja: "デパート" },
     { vn: "Ngân hàng", ja: "銀行" },
     { vn: "Bưu điện", ja: "郵便局" },
@@ -168,9 +175,11 @@ const wordDatabases = {
     { vn: "Vất vả quá nhỉ / Cực nhỉ", ja: "大変ですね" },
     { vn: "Nhờ anh/chị / Xin vui lòng", ja: "お願いします" },
     { vn: "Vâng, tôi hiểu rồi / Xin rõ", ja: "かしこまりました" },
-    { vn: "Đi", ja: "行きます" },
-    { vn: "Đến", ja: "来ます" },
-    { vn: "Về", ja: "帰ります" },
+
+    // --- 第5課 (辞書形統一) ---
+    { vn: "Đi", ja: "行く" },
+    { vn: "Đến", ja: "来る" },
+    { vn: "Về", ja: "帰る" },
     { vn: "Trường học", ja: "学校" },
     { vn: "Ga tàu", ja: "駅" },
     { vn: "Máy bay", ja: "飛行機" },
@@ -220,7 +229,9 @@ const wordDatabases = {
     { vn: "Tàu tốc hành đặc biệt", ja: "特急" },
     { vn: "Tiếp theo / Sau", ja: "次の" }
   ],
+  
   "ch6_8": [
+    // --- 第6課 (辞書形統一) ---
     { vn: "Ăn", ja: "食べる" },
     { vn: "Uống", ja: "飲む" },
     { vn: "Hút (thuốc lá)", ja: "吸う" },
@@ -263,7 +274,9 @@ const wordDatabases = {
     { vn: "Luôn luôn / Thường", ja: "いつも" },
     { vn: "Thỉnh thoảng", ja: "時々" },
     { vn: "Sau đó / Thế rồi", ja: "それから" },
-    { vn: "Cái gì đó", ja: "何を" },
+    { vn: "Cái gì đó", ja: "何か" },
+
+    // --- 第7課 (辞書形統一) ---
     { vn: "Cắt", ja: "切る" },
     { vn: "Gửi", ja: "送る" },
     { vn: "Cho / Tặng", ja: "上げる" },
@@ -282,7 +295,7 @@ const wordDatabases = {
     { vn: "Máy tính cá nhân", ja: "パソコン" },
     { vn: "Điện thoại di động", ja: "携帯電話" },
     { vn: "Thư điện tử / Email", ja: "メール" },
-    { vn: "Đồ quà cáp / Quà tặng", ja: "年賀状" },
+    { vn: "Thiệp mừng năm mới", ja: "年賀状" },
     { vn: "Bánh kẹo", ja: "菓子" },
     { vn: "Mùa đông", ja: "冬" },
     { vn: "Tết / Năm mới", ja: "正月" },
@@ -292,6 +305,8 @@ const wordDatabases = {
     { vn: "Đã ~ / Rồi", ja: "もう" },
     { vn: "Chưa", ja: "まだ" },
     { vn: "Từ bây giờ", ja: "これから" },
+
+    // --- 第8課 ---
     { vn: "Đẹp / Sạch sẽ", ja: "綺麗" },
     { vn: "Náo nhiệt / Đông đúc", ja: "賑やか" },
     { vn: "Yên tĩnh", ja: "静か" },
@@ -310,7 +325,7 @@ const wordDatabases = {
     { vn: "Cao / Đắt đỏ", ja: "高い" },
     { vn: "Thấp", ja: "低い" },
     { vn: "Rẻ", ja: "安い" },
-    { vn: "Nhiệt độ / Thời tiết ấm áp", ja: "暖かい" },
+    { vn: "Ấm áp", ja: "暖かい" },
     { vn: "Mát mẻ", ja: "涼しい" },
     { vn: "Lạnh", ja: "寒い" },
     { vn: "Nóng", ja: "暑い" },
@@ -329,29 +344,128 @@ const wordDatabases = {
     { vn: "Món ăn", ja: "料理" },
     { vn: "Kỳ thi", ja: "試験" },
     { vn: "Công việc / Sinh hoạt", ja: "生活" },
-    { vn: "Côn trùng / Ghế", ja: "椅子" },
+    { vn: "Ghế", ja: "椅子" },
     { vn: "Như thế nào", ja: "どう" },
     { vn: "Thế nào (lịch sự)", ja: "どのような" },
     { vn: "Cả hai", ja: "両方" },
     { vn: "Rất ~", ja: "とても" },
     { vn: "Không ~ lắm", ja: "あまり" },
     { vn: "Nhưng", ja: "が" },
-    { vn: "Cái này nhé", ja: "どれ" }
+    { vn: "Cái nào", ja: "どれ" }
   ],
+
   "ch9_12": [
-    { vn: "Hiểu", ja: "分かります" }, { vn: "Có", ja: "あります" }, { vn: "Thích", ja: "好き" }, { vn: "Ghét", ja: "嫌い" }
+    // --- 第9課 ---
+    { vn: "Hiểu", ja: "分かる" },
+    { vn: "Có (sở hữu/tồn tại vật vô tri)", ja: "ある" },
+    { vn: "Có (tồn tại người/động vật)", ja: "いる" },
+    { vn: "Thích", ja: "好き" },
+    { vn: "Ghét", ja: "嫌い" },
+    { vn: "Giỏi", ja: "上手" },
+    { vn: "Kém", ja: "下手" },
+    { vn: "Món ăn / Thức ăn", ja: "料理" },
+    { vn: "Đồ uống", ja: "飲み物" },
+    { vn: "Trái cây", ja: "果物" },
+    { vn: "Âm nhạc", ja: "音楽" },
+    { vn: "Bài hát", ja: "歌" },
+    { vn: "Đàn guitar", ja: "ギター" },
+    { vn: "Khiêu vũ", ja: "ダンス" },
+    { vn: "Môn thể thao", ja: "スポーツ" },
+    { vn: "Bóng chày", ja: "野球" },
+    { vn: "Bóng đá", ja: "サッカー" },
+    { vn: "Tennis", ja: "テニス" },
+    { vn: "Cơ hội / Thời gian", ja: "時間" },
+    { vn: "Tiền", ja: "お金" },
+    { vn: "Bộ phim", ja: "映画" },
+    { vn: "Thư", ja: "手紙" },
+    { vn: "Cà phê", ja: "コーヒー" },
+    { vn: "Trà", ja: "お茶" },
+    { vn: "Nước", ja: "水" },
+    { vn: "Sữa", ja: "牛乳" },
+    { vn: "Bia", ja: "ビール" },
+    { vn: "Rượu", ja: "酒" },
+
+    // --- 第10課 ---
+    { vn: "Có (tồn tại ở đâu đó)", ja: "ある" },
+    { vn: "Có (người/động vật ở đâu đó)", ja: "いる" },
+    { vn: "Nhiều", ja: "多い" },
+    { vn: "Ít", ja: "少ない" },
+    { vn: "Gia đình", ja: "家族" },
+    { vn: "Vợ", ja: "妻" },
+    { vn: "Chồng", ja: "夫" },
+    { vn: "Con cái", ja: "子供" },
+    { vn: "Con trai", ja: "息子" },
+    { vn: "Con gái", ja: "娘" },
+    { vn: "Anh trai", ja: "兄" },
+    { vn: "Chị gái", ja: "姉" },
+    { vn: "Em trai", ja: "弟" },
+    { vn: "Em gái", ja: "妹" },
+    { vn: "Bố mẹ", ja: "両親" },
+    { vn: "Ông nội / Bà nội", ja: "祖父" },
+    { vn: "Bà ngoại / Ông ngoại", ja: "祖母" },
+    { vn: "Chú / Bác / Cậu", ja: "叔父" },
+    { vn: "Cô / Dì", ja: "叔母" },
+    { vn: "Thành phố", ja: "都市" },
+    { vn: "Công viên", ja: "公園" },
+    { vn: "Cửa hàng", ja: "店" },
+    { vn: "Hiệu sách", ja: "本屋" },
+    { vn: "Nhà hàng", ja: "レストラン" },
+
+    // --- 第11課 ---
+    { vn: "Chơi / Vui chơi", ja: "遊ぶ" },
+    { vn: "Bơi", ja: "泳ぐ" },
+    { vn: "Đón", ja: "迎える" },
+    { vn: "Mệt", ja: "疲れる" },
+    { vn: "Kết hôn", ja: "結婚する" },
+    { vn: "Mua sắm", ja: "買い物する" },
+    { vn: "Ăn cơm", ja: "食事する" },
+    { vn: "Đi dạo", ja: "散歩する" },
+    { vn: "Đặc biệt", ja: "特別" },
+    { vn: "Chủ nhật", ja: "日曜日" },
+    { vn: "Thứ hai", ja: "月曜日" },
+    { vn: "Thứ ba", ja: "火曜日" },
+    { vn: "Thứ tư", ja: "水曜日" },
+    { vn: "Thứ năm", ja: "木曜日" },
+    { vn: "Thứ sáu", ja: "金曜日" },
+    { vn: "Thứ bảy", ja: "土曜日" },
+    { vn: "Hôm nay", ja: "今日" },
+    { vn: "Ngày mai", ja: "明日" },
+    { vn: "Hôm qua", ja: "昨日" },
+
+    // --- 第12課 ---
+    { vn: "Nghỉ / Vắng mặt", ja: "休む" },
+    { vn: "Trở nên / Trở thành", ja: "なる" },
+    { vn: "Mang / Trì hoãn", ja: "持つ" },
+    { vn: "Năm ngoái", ja: "去年" },
+    { vn: "Năm nay", ja: "今年" },
+    { vn: "Năm sau", ja: "来年" },
+    { vn: "Mùa xuân", ja: "春" },
+    { vn: "Mùa hạ / Mùa hè", ja: "夏" },
+    { vn: "Mùa thu", ja: "秋" },
+    { vn: "Mùa đông", ja: "冬" },
+    { vn: "Thời tiết", ja: "天気" },
+    { vn: "Trời mưa", ja: "雨" },
+    { vn: "Trời tuyết", ja: "雪" },
+    { vn: "Gió", ja: "風" },
+    { vn: "Biển", ja: "海" },
+    { vn: "Núi", ja: "山" },
+    { vn: "Thành phố", ja: "町" },
+    { vn: "Đồ ăn", ja: "食べ物" },
+    { vn: "Thế giới", ja: "世界" },
+    { vn: "Lễ hội", ja: "祭" }
   ],
+
   "ch13_15": [
     { vn: "Rộng", ja: "広い" }, { vn: "Hẹp", ja: "狭い" }, { vn: "Mới", ja: "新しい" }, { vn: "Cũ", ja: "古い" }
   ],
   "ch16_19": [
-    { vn: "Bật", ja: "付けます" }, { vn: "Tắt", ja: "消します" }, { vn: "Mở", ja: "開けます" }, { vn: "Đóng", ja: "閉めます" }
+    { vn: "Bật", ja: "付ける" }, { vn: "Tắt", ja: "消す" }, { vn: "Mở", ja: "開ける" }, { vn: "Đóng", ja: "閉める" }
   ],
   "ch20_22": [
-    { vn: "Cần", ja: "要ります" }, { vn: "Hiểu", ja: "分かります" }, { vn: "Tìm", ja: "探します" }, { vn: "Trễ / muộn", ja: "遅れます" }
+    { vn: "Cần", ja: "要る" }, { vn: "Hiểu", ja: "分かる" }, { vn: "Tìm", ja: "探す" }, { vn: "Trễ / muộn", ja: "遅れる" }
   ],
   "ch23_25": [
-    { vn: "Rẽ / quẹo", ja: "曲がります" }, { vn: "Mang / cầm", ja: "持ちます" }, { vn: "Lấy", ja: "取ります" }, { vn: "Giúp", ja: "手伝います" }
+    { vn: "Rẽ / quẹo", ja: "曲がる" }, { vn: "Mang / cầm", ja: "持つ" }, { vn: "Lấy", ja: "取る" }, { vn: "Giúp", ja: "手伝う" }
   ]
 };
 
@@ -360,31 +474,41 @@ let currentIndex = 0;
 let score = 0;
 let userAnswers = [];
 
+// ベトナム語を3回連続で発話する関数
 function playVietnameseAudio() {
   if (!('speechSynthesis' in window)) {
     alert("お使いのブラウザは音声読み上げに対応していません。");
     return;
   }
+
   window.speechSynthesis.cancel();
+
   const currentWord = currentQuestions[currentIndex].vn;
   let count = 0;
+
   function speakOnce() {
     if (count >= 3) return;
+
     const utterance = new SpeechSynthesisUtterance(currentWord);
     utterance.lang = 'vi-VN';
     utterance.rate = 0.9;
+
     utterance.onend = function() {
       count++;
       setTimeout(speakOnce, 400);
     };
+
     window.speechSynthesis.speak(utterance);
   }
+
   speakOnce();
 }
 
+// 効果音（ピンポーン音）
 function playCorrectSound() {
   try {
     const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    
     const osc1 = audioCtx.createOscillator();
     const gain1 = audioCtx.createGain();
     osc1.type = 'sine';
@@ -413,6 +537,7 @@ function playCorrectSound() {
   }
 }
 
+// シャッフル
 function shuffleArray(array) {
   const arr = [...array];
   for (let i = arr.length - 1; i > 0; i--) {
@@ -422,8 +547,10 @@ function shuffleArray(array) {
   return arr;
 }
 
+// 学習開始
 function startQuiz(categoryKey) {
   let targetPool = [];
+
   if (categoryKey === 'all') {
     for (let key in wordDatabases) {
       targetPool = targetPool.concat(wordDatabases[key]);
@@ -469,6 +596,7 @@ function startQuiz(categoryKey) {
   showQuestion();
 }
 
+// 問題表示
 function showQuestion() {
   const q = currentQuestions[currentIndex];
   document.getElementById('current-question-num').textContent = currentIndex + 1;
@@ -497,6 +625,7 @@ function showQuestion() {
   }
 }
 
+// 選択肢クリック
 function selectAnswer(choiceIndex) {
   if (userAnswers[currentIndex] !== null) return;
 
@@ -525,6 +654,7 @@ function selectAnswer(choiceIndex) {
   }
 }
 
+// 戻る
 function goPrev() {
   if (currentIndex > 0) {
     currentIndex--;
@@ -532,6 +662,7 @@ function goPrev() {
   }
 }
 
+// 次へ
 function goNext() {
   if (currentIndex < currentQuestions.length - 1) {
     currentIndex++;
@@ -541,8 +672,10 @@ function goNext() {
   }
 }
 
+// 終了ボタンが押されたときの処理
 function goExit() {
   const topScreen = document.getElementById('screen-top');
+  
   if (topScreen.style.display !== 'none') {
     alert("ブラウザのタブ（×ボタン）を閉じてアプリを終了してください。");
   } else {
@@ -550,6 +683,7 @@ function goExit() {
   }
 }
 
+// 結果表示
 function showResult() {
   document.getElementById('screen-quiz').style.display = 'none';
   document.getElementById('screen-result').style.display = 'block';
@@ -569,6 +703,7 @@ function showResult() {
   }
 }
 
+// トップに戻る
 function returnToTop() {
   document.getElementById('screen-quiz').style.display = 'none';
   document.getElementById('screen-result').style.display = 'none';
