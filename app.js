@@ -1,4 +1,4 @@
-// みんなの日本語 初級 第1課〜第12課 完全網羅データベース（辞書形統一版）
+// みんなの日本語 初級 第1課〜第12課 完全網羅データベース（完全辞書形統一版）
 const wordDatabases = {
   "ch1_5": [
     // --- 第1課 ---
@@ -124,7 +124,7 @@ const wordDatabases = {
     { vn: "Xin lỗi / Cảm ơn (khi nhận sự giúp đỡ)", ja: "すみません" },
     { vn: "Cảm ơn rất nhiều", ja: "どうもありがとうございました" },
 
-    // --- 第4課 (辞書形統一) ---
+    // --- 第4課 ---
     { vn: "Thức dậy", ja: "起きる" },
     { vn: "Đi ngủ", ja: "寝る" },
     { vn: "Làm việc", ja: "働く" },
@@ -176,7 +176,7 @@ const wordDatabases = {
     { vn: "Nhờ anh/chị / Xin vui lòng", ja: "お願いします" },
     { vn: "Vâng, tôi hiểu rồi / Xin rõ", ja: "かしこまりました" },
 
-    // --- 第5課 (辞書形統一) ---
+    // --- 第5課 ---
     { vn: "Đi", ja: "行く" },
     { vn: "Đến", ja: "来る" },
     { vn: "Về", ja: "帰る" },
@@ -231,7 +231,7 @@ const wordDatabases = {
   ],
   
   "ch6_8": [
-    // --- 第6課 (辞書形統一) ---
+    // --- 第6課 ---
     { vn: "Ăn", ja: "食べる" },
     { vn: "Uống", ja: "飲む" },
     { vn: "Hút (thuốc lá)", ja: "吸う" },
@@ -276,7 +276,7 @@ const wordDatabases = {
     { vn: "Sau đó / Thế rồi", ja: "それから" },
     { vn: "Cái gì đó", ja: "何か" },
 
-    // --- 第7課 (辞書形統一) ---
+    // --- 第7課 ---
     { vn: "Cắt", ja: "切る" },
     { vn: "Gửi", ja: "送る" },
     { vn: "Cho / Tặng", ja: "上げる" },
@@ -355,7 +355,7 @@ const wordDatabases = {
   ],
 
   "ch9_12": [
-    // --- 第9課 ---
+    // --- 第9課 (完全辞書形統一) ---
     { vn: "Hiểu", ja: "分かる" },
     { vn: "Có (sở hữu/tồn tại vật vô tri)", ja: "ある" },
     { vn: "Có (tồn tại người/động vật)", ja: "いる" },
@@ -385,7 +385,7 @@ const wordDatabases = {
     { vn: "Bia", ja: "ビール" },
     { vn: "Rượu", ja: "酒" },
 
-    // --- 第10課 ---
+    // --- 第10課 (完全辞書形統一) ---
     { vn: "Có (tồn tại ở đâu đó)", ja: "ある" },
     { vn: "Có (người/động vật ở đâu đó)", ja: "いる" },
     { vn: "Nhiều", ja: "多い" },
@@ -411,7 +411,7 @@ const wordDatabases = {
     { vn: "Hiệu sách", ja: "本屋" },
     { vn: "Nhà hàng", ja: "レストラン" },
 
-    // --- 第11課 ---
+    // --- 第11課 (完全辞書形統一) ---
     { vn: "Chơi / Vui chơi", ja: "遊ぶ" },
     { vn: "Bơi", ja: "泳ぐ" },
     { vn: "Đón", ja: "迎える" },
@@ -432,7 +432,7 @@ const wordDatabases = {
     { vn: "Ngày mai", ja: "明日" },
     { vn: "Hôm qua", ja: "昨日" },
 
-    // --- 第12課 ---
+    // --- 第12課 (完全辞書形統一) ---
     { vn: "Nghỉ / Vắng mặt", ja: "休む" },
     { vn: "Trở nên / Trở thành", ja: "なる" },
     { vn: "Mang / Trì hoãn", ja: "持つ" },
