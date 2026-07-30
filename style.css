@@ -185,13 +185,12 @@ body {
   color: #28a745;
 }
 
-/* 携帯画面下部固定ナビゲーション */
+/* 画面下部固定ナビゲーション */
 .bottom-bar {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100vw;
-  /* スマホのホームバー（下部の余白）に合わせてパディングを自動調整 */
+  width: 100%; /* 100%に変更してPC・スマホ共通で安定させます */
   padding: 12px 16px calc(12px + env(safe-area-inset-bottom)) 16px;
   background-color: #ffffff;
   box-shadow: 0 -2px 10px rgba(0,0,0,0.08);
